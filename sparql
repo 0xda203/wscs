@@ -1,0 +1,556 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX com: <http://www.each.usp.br/ach2098/comercio#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+#################################################################
+#    Samsung
+#################################################################
+
+INSERT DATA {
+<http://www.each.usp.br/ach2098/comercio#GalazyZFold2> rdf:type owl:NamedIndividual, com:Smartphone;
+          com:codigo "bz43WoQQsgsexHGgcLO2";
+           com:nome "Galaxy Z Fold2 5G Mystic Black"^^xsd:string ;
+           com:marca "Samsung" ;
+           com:preco "12599.10"^^xsd:double ;
+           com:cor "Mystic Black"^^xsd:string ;
+           com:urlFoto "https://samsungbr.vtexassets.com/arquivos/ids/319670-1600-auto"^^xsd:string ;
+           com:url "https://shop.samsung.com/br/galaxy-z-fold2-5g/p"^^xsd:string ;
+           com:quantidade 999.
+};
+
+INSERT DATA {
+<http://www.each.usp.br/ach2098/comercio#GalaxyS21PLUS> rdf:type owl:NamedIndividual, com:Smartphone;
+          com:codigo "jZMz5zmBysyHrHh1mj3s";
+           com:nome "Galaxy S21+ 5G Preto 128GB"^^xsd:string ;
+           com:marca "Samsung" ;
+           com:preco "4998.60"^^xsd:double;
+           com:cor "Violeta"^^xsd:string;
+           com:urlFoto "https://images.samsung.com/br/smartphones/galaxy-s21-5g/models/images/galaxy-s21-plus-5g_models_colors_phantom-violet.png"^^xsd:string ;
+           com:url "https://shop.samsung.com/br/galaxy-s21-plus-5g/p"^^xsd:string ;
+           com:quantidade 999.
+};
+
+INSERT DATA {
+<http://www.each.usp.br/ach2098/comercio#GalazyA52> rdf:type owl:NamedIndividual, com:Smartphone;
+          com:codigo "5ea5AFzAgSxGRCNOsPGp";
+           com:nome "Galaxy A52 Azul 128GB"^^xsd:string ;
+           com:marca "Samsung" ;
+           com:preco "2249.10"^^xsd:double ;
+           com:cor "Azul"^^xsd:string ;
+           com:urlFoto "https://samsungbr.vtexassets.com/arquivos/ids/316913-1600-auto"^^xsd:string ;
+           com:url "https://shop.samsung.com/br/galaxy-a52/p"^^xsd:string ;
+           com:quantidade 999.
+};
+
+INSERT DATA {
+<http://www.each.usp.br/ach2098/comercio#GalaxyS21Ultra5G> rdf:type owl:NamedIndividual, com:Smartphone;
+com:codigo "WKX82xPGz8MEyW7QeK8U";
+           com:nome "Galaxy S21 Ultra 5G Preto 256GB"^^xsd:string ;
+           com:marca "Samsung" ;
+           com:preco "7199.10"^^xsd:double ;
+           com:cor "Black"^^xsd:string;
+           com:urlFoto "https://samsungbr.vtexassets.com/arquivos/ids/319748-1600-auto"^^xsd:string ;
+           com:url "https://shop.samsung.com/br/galaxy-s21-ultra-5g/p"^^xsd:string ;
+           com:quantidade 999.
+};
+
+INSERT DATA {
+<http://www.each.usp.br/ach2098/comercio#GalaxyM21s> rdf:type owl:NamedIndividual, com:Smartphone;
+com:codigo "E7gaqy5MgMfyG76M6RoQ";
+
+           com:nome "Galaxy M21s Preto"^^xsd:string ;
+           com:marca "Samsung" ;
+           com:preco "1439.10"^^xsd:double ;
+           com:cor "Black";
+           com:urlFoto "https://samsungbr.vtexassets.com/arquivos/ids/313689-1200-autoe" ;
+           com:url "https://www.samsung.com/br/smartphones/galaxy-m/galaxy-m21s-black-64gb-sm-f415fzkbzto/"^^xsd:string ;
+           com:quantidade 999.
+};
+
+
+
+#################################################################
+#    Apple
+#################################################################
+
+INSERT DATA {
+<http://www.each.usp.br/ach2098/comercio#Iphone12Pro> rdf:type owl:NamedIndividual, com:Smartphone;
+com:codigo "J6xapgDvsShzkSQgd9kE";
+           com:nome "Iphone 12 Pro"^^xsd:string ;
+           com:marca "Apple" ;
+           com:preco "9999"^^xsd:double ;
+           com:cor "Azul-pacífico"^^xsd:string ;
+           com:urlFoto "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-12-pro-family-hero?wid=470&hei=556&fmt=jpeg&qlt=95&.v=1604021663000"^^xsd:string ;
+           com:url "https://www.apple.com/br/shop/buy-iphone/iphone-12-pro"^^xsd:string ;
+           com:quantidade 999.
+};
+
+INSERT DATA {
+<http://www.each.usp.br/ach2098/comercio#IphoneXR128GB> rdf:type owl:NamedIndividual, com:Smartphone;
+com:codigo "2YYFubH9DM2vveLnclmx";
+           com:nome "Iphone XR 128GB"^^xsd:string ;
+           com:marca "Apple" ;
+           com:preco "54999"^^xsd:double;
+           com:cor "Amarelo"^^xsd:string;
+           com:urlFoto "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-xr-yellow-select-201809?wid=470&hei=556&fmt=p-jpg&qlt=95&.v=1551226036826"^^xsd:string ;
+           com:url "https://www.apple.com/br/shop/buy-iphone/iphone-xr"^^xsd:string ;
+           com:quantidade 999.
+};
+
+INSERT DATA {
+<http://www.each.usp.br/ach2098/comercio#IphoneSE64GB> rdf:type owl:NamedIndividual, com:Smartphone;
+com:codigo "RtndzWwduS4LIlyb0epj";
+           com:nome "iPhone SE 64GB"^^xsd:string ;
+           com:marca "Apple" ;
+           com:preco "3699"^^xsd:double ;
+           com:cor "Vermelho"^^xsd:string ;
+           com:urlFoto "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-se-red-select-2020?wid=470&hei=556&fmt=png-alpha&.v=1586574260319"^^xsd:string ;
+           com:url "https://www.apple.com/br/shop/buy-iphone/iphone-se"^^xsd:string ;
+           com:quantidade 999.
+};
+
+INSERT DATA {
+<http://www.each.usp.br/ach2098/comercio#Iphone1125GB> rdf:type owl:NamedIndividual, com:Smartphone;
+com:codigo "9baRRg3YZBLem8YfByti";
+           com:nome "Iphone 11 256GB"^^xsd:string ;
+           com:marca "Apple" ;
+           com:preco "7199.10"^^xsd:double ;
+           com:cor "Verde"^^xsd:string;
+           com:urlFoto "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone11-green-select-2019?wid=470&hei=556&fmt=png-alpha&.v=1566956144838"^^xsd:string ;
+           com:url "https://www.apple.com/br/shop/buy-iphone/iphone-11"^^xsd:string ;
+           com:quantidade 999.
+};
+
+INSERT DATA {
+<http://www.each.usp.br/ach2098/comercio#Iphone12128GB> rdf:type owl:NamedIndividual, com:Smartphone;
+com:codigo "qn2JOiDuIY7fOh4oAv9b";
+           com:nome "Galaxy M21s Preto"^^xsd:string ;
+           com:marca "Apple" ;
+           com:preco "7499"^^xsd:double ;
+           com:cor "Roxo";
+           com:urlFoto "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-12-family-select-2021?wid=470&hei=556&fmt=jpeg&qlt=95&.v=1617135051000" ;
+           com:url "https://www.apple.com/br/shop/buy-iphone/iphone-12"^^xsd:string ;
+           com:quantidade 999.
+};
+
+#################################################################
+#    Drogasil
+#################################################################
+
+INSERT DATA {
+<http://www.each.usp.br/ach2098/comercio#Dorflex50> rdf:type owl:NamedIndividual, com:Remedio;
+com:codigo "ThJKKrEkUoKnpLlUj36b";
+           com:nome "Dorflex com 50 comprimidos"^^xsd:string ;
+           com:marca "Sanofi Aventis" ;
+           com:preco "17.59"^^xsd:double ;
+           com:cor "Unica";
+           com:urlFoto "https://www.drogasil.com.br/_next/image?url=https%3A%2F%2Fimg.drogasil.com.br%2Fcatalog%2Fproduct%2Fd%2Fo%2Fdorflex-com-50-comprimidos-7891058020941_hero.jpg%3Fwidth%3D450%26height%3D450%26quality%3D85%26type%3Dresize&w=640&q=85"^^xsd:string ;
+           com:url "https://www.drogasil.com.br/dorflex-analgesico-com-50-comprimidos.html"^^xsd:string ;
+           com:quantidade 999.
+};
+
+INSERT DATA {
+<http://www.each.usp.br/ach2098/comercio#DipironaMono> rdf:type owl:NamedIndividual, com:Remedio;
+com:codigo "6qDX19m9s1y3yy79G7Y2";
+           com:nome "Dipirona Monoidratada 500mg"^^xsd:string ;
+           com:marca "Prati Donaduzzi" ;
+           com:preco "3.95"^^xsd:double ;
+           com:cor "Unica";
+           com:urlFoto "https://www.drogasil.com.br/_next/image?url=https%3A%2F%2Fimg.drogasil.com.br%2Fcatalog%2Fproduct%2Fd%2Fi%2Fdipirona-monoidratada-500mg-com-10-comprimidos-prati-donaduzzi.jpg%3Fwidth%3D450%26height%3D450%26quality%3D85%26type%3Dresize&w=640&q=85"^^xsd:string ;
+           com:url "https://www.drogasil.com.br/dipirona-monoidratada-500mg-prati-genericos-10-comprimidos.html"^^xsd:string ;
+           com:quantidade 999.
+};
+
+INSERT DATA {
+<http://www.each.usp.br/ach2098/comercio#Neosaldina30> rdf:type owl:NamedIndividual, com:Remedio;
+com:codigo "WtUgE5WMR4dQlYNeLnaP";
+           com:nome "Neosaldina com 30 drágeas"^^xsd:string ;
+           com:marca "Neosaldina" ;
+           com:preco "24.29"^^xsd:double ;
+           com:cor "Unica";
+           com:urlFoto "https://www.drogasil.com.br/_next/image?url=https%3A%2F%2Fimg.drogasil.com.br%2Fcatalog%2Fproduct%2F3%2F8%2F38398_1_1_1_1_1.jpg%3Fwidth%3D450%26height%3D450%26quality%3D85%26type%3Dresize&w=640&q=85"^^xsd:string ;
+           com:url "https://www.drogasil.com.br/neosaldina-30-drageas.html"^^xsd:string ;
+           com:quantidade 999.
+};
+
+INSERT DATA {
+<http://www.each.usp.br/ach2098/comercio#Novalgina1g> rdf:type owl:NamedIndividual, com:Remedio;
+com:codigo "Mv4NHfMBfroHvYb8R195";
+           com:nome "Novalgina 1g com 10 comprimidos"^^xsd:string ;
+           com:marca "Sanofi Aventis" ;
+           com:preco "19.39"^^xsd:double ;
+           com:cor "Unica";
+           com:urlFoto "https://www.drogasil.com.br/_next/image?url=https%3A%2F%2Fimg.drogasil.com.br%2Fcatalog%2Fproduct%2Fn%2Fo%2Fnovalgina-1g-com-10-comprimidos-7891058001155-_3_.jpg%3Fwidth%3D450%26height%3D450%26quality%3D85%26type%3Dresize&w=640&q=85"^^xsd:string ;
+           com:url "https://www.drogasil.com.br/novalgina-1-grama-10-comprimidos.html"^^xsd:string ;
+           com:quantidade 999.
+};
+
+INSERT DATA {
+<http://www.each.usp.br/ach2098/comercio#AspirinaPrevent> rdf:type owl:NamedIndividual, com:Remedio;
+com:codigo "rLQYi0jAInjKHmS4JqEP";
+           com:nome "Aspirina Prevent 100mg com 30 comprimidos"^^xsd:string ;
+           com:marca "Bayer" ;
+           com:preco "17.09"^^xsd:double ;
+           com:cor "Unica";
+           com:urlFoto "https://www.drogasil.com.br/_next/image?url=https%3A%2F%2Fimg.drogasil.com.br%2Fcatalog%2Fproduct%2Fplaceholder%2Fstores%2F1%2Fdrogasil_tarja_vermelha_01.jpg%3Fwidth%3D450%26height%3D450%26quality%3D85%26type%3Dresize&w=640&q=85"^^xsd:string ;
+           com:url "https://www.drogasil.com.br/aspirina-100-mg-prevent-30-comprimidos.html"^^xsd:string ;
+           com:quantidade 999.
+};
+
+
+#################################################################
+#    Netshoes
+#################################################################
+
+INSERT DATA {
+<http://www.each.usp.br/ach2098/comercio#CamisaMasculinaMangaCurtaProTourBikeAzul> rdf:type owl:NamedIndividual, com:Camisa;
+com:codigo "Z06vtrZfyzczCLY8y4GG";
+           com:nome "Camisa Masculina Manga Curta Pro Tour Bike Azul dry fit proteção uv +50 - Azul"^^xsd:string ;
+           com:preco "99.90"^^xsd:double ;
+           com:marca "PRO TOUR";
+           com:cor "Azul";
+           com:quantidade 999;
+           com:urlFoto "https://static.netshoes.com.br/produtos/camisa-masculina-manga-curta-pro-tour-bike-azul-dry-fit-protecao-uv-50/08/PKJ-0506-008/PKJ-0506-008_zoom1.jpg?ts=1626896020";
+           com:url "https://www.netshoes.com.br/camisa-masculina-manga-curta-pro-tour-bike-azul-dry-fit-protecao-uv-50-azul-PKJ-0506-008"^^xsd:string .
+};
+
+INSERT DATA {
+<http://www.each.usp.br/ach2098/comercio#NikeMonsterMesh5> rdf:type owl:NamedIndividual, com:Calça;
+com:codigo "jW9PR7gZnzJW1zYD86Kc";
+           com:nome "Bermuda Nike Monster Mesh 5.0 Masculina";
+           com:preco "79.99"^^xsd:double ;
+           com:marca "Nike";
+           com:cor "Preto+branco";
+           com:quantidade 999;
+           com:urlFoto "https://static.netshoes.com.br/produtos/bermuda-nike-monster-mesh-50-masculina/26/HZM-3990-026/HZM-3990-026_zoom1.jpg?ts=1592995037";
+           com:url "https://www.netshoes.com.br/bermuda-nike-monster-mesh-50-masculina-preto+branco-HZM-3990-026"^^xsd:string .
+};
+
+INSERT DATA {
+<http://www.each.usp.br/ach2098/comercio#CamisaMilanoTricolineMangaLongaMasculinaAzul> rdf:type owl:NamedIndividual, com:Camisa;
+com:codigo "ZnU7E8L7eBNuRXyzlGrE";
+           com:nome "Camisa Milano Tricoline Manga Longa Masculina - Azul";
+           com:preco "69.99"^^xsd:double ;
+           com:marca "Milano";
+           com:cor "Azul";
+           com:quantidade 999;
+           com:urlFoto "https://static.netshoes.com.br/produtos/camisa-milano-tricoline-manga-longa-masculina/08/GAL-1766-008/GAL-1766-008_zoom1.jpg?ts=1626702747&";
+           com:url "https://www.netshoes.com.br/camisa-milano-tricoline-manga-longa-masculina-azul-GAL-1766-008"^^xsd:string .
+};
+
+INSERT DATA {
+<http://www.each.usp.br/ach2098/comercio#CamisaPoloBasicamenteMangaLongaFemininaAzulEscuro> rdf:type owl:NamedIndividual, com:Camisa;
+com:codigo "H756MPFPc2UEo5xBCqKZ";
+           com:nome "Camisa Polo Basicamente Manga Longa Feminina - Azul Escuro" ;
+           com:preco "49.90"^^xsd:double ;
+           com:marca "Basicamente";
+           com:cor "Azul Escuro";
+           com:quantidade 999;
+           com:urlFoto "https://static.netshoes.com.br/produtos/camisa-polo-basicamente-manga-longa-feminina/42/PIG-0229-342/PIG-0229-342_zoom1.jpg?ts=1626876182";
+           com:url "https://www.netshoes.com.br/camisa-polo-basicamente-manga-longa-feminina-azul+escuro-PIG-0229-342"^^xsd:string .
+};
+
+INSERT DATA {
+<http://www.each.usp.br/ach2098/comercio#CalcaAdidasEssentials3ListrasMasculinaMarinho> rdf:type owl:NamedIndividual, com:Calça;
+com:codigo "3uts7m8p9X44w4kBr1RK";
+           com:nome "Calça Adidas Essentials 3 Listras Masculina - Marinho";
+           com:preco "239.99"^^xsd:double ;
+           com:marca "Adidas";
+           com:cor "Marinho";
+           com:quantidade 999;
+           com:urlFoto "https://static.netshoes.com.br/produtos/calca-adidas-essentials-3-listras-masculina/12/3ZP-1314-012/3ZP-1314-012_zoom1.jpg?ts=1625683873&";
+           com:url "https://www.netshoes.com.br/calca-adidas-essentials-3-listras-masculina-marinho-3ZP-1314-012"^^xsd:string .
+};
+
+#################################################################
+#    Saraiva                                                    #
+#################################################################
+
+INSERT DATA {
+<http://www.each.usp.br/ach2098/comercio#PaiRicoPaiPobreEdicao20Anos> rdf:type owl:NamedIndividual, com:Livro;
+com:codigo "nbS8Xyt2nf712bQEDMcz";
+
+           com:nome "Pai Rico, Pai Pobre - Edição de 20 Anos";
+           com:preco "44.90"^^xsd:double ;
+           com:marca "Alta Books";
+           com:cor "Unica";
+           com:quantidade 999;
+           com:urlFoto "https://lojasaraiva.vteximg.com.br/arquivos/ids/12710209/1010071147.jpg?v=637154380982930000";
+           com:url "https://www.saraiva.com.br/pai-rico-pai-pobre-edicao-de-20-anos-9730193/p"^^xsd:string .
+};
+
+INSERT DATA {
+<http://www.each.usp.br/ach2098/comercio#MaisEspertoQueoDiabooMistérioReveladodaLiberdadeedoSucesso> rdf:type owl:NamedIndividual, com:Livro;
+com:codigo "D7MrBcdtpv8M9TEmCzoE";
+
+           com:nome "Mais Esperto Que o Diabo - o Mistério Revelado da Liberdade e do Sucesso";
+           com:preco "27.90"^^xsd:double ;
+           com:marca "Citadel";
+           com:cor "Unica";
+           com:quantidade 999;
+           com:urlFoto "https://lojasaraiva.vteximg.com.br/arquivos/ids/12104802/1009575881.jpg?v=637142231559930000";
+           com:url "https://www.saraiva.com.br/mais-esperto-que-o-diabo-o-misterio-revelado-da-liberdade-e-do-sucesso-7923956/p"^^xsd:string .
+};
+
+INSERT DATA {
+<http://www.each.usp.br/ach2098/comercio#DoMilAoMilhao> rdf:type owl:NamedIndividual, com:Livro;
+com:codigo "VqFrPeg9NlT87SXDqDq6";
+
+           com:nome "Do Mil Ao Milhão";
+           com:preco "29.90"^^xsd:double ;
+           com:marca "Harpercollins";
+           com:cor "Unica";
+           com:quantidade 999;
+           com:urlFoto "https://lojasaraiva.vteximg.com.br/arquivos/ids/12113964/1006831025.jpg?v=637142266314730000";
+           com:url "https://www.saraiva.com.br/do-mil-ao-milhao-10501613/p"^^xsd:string .
+};
+
+INSERT DATA {
+<http://www.each.usp.br/ach2098/comercio#VadeMecumCompacto23Edição2021> rdf:type owl:NamedIndividual, com:Livro;
+com:codigo "LfooboSKrSzWSudSYqSM";
+
+           com:nome "Vade Mecum Compacto - 23ª Edição - 2021";
+           com:preco "113.90"^^xsd:double ;
+           com:marca "Saraiva";
+           com:cor "Unica";
+           com:quantidade 999;
+           com:urlFoto "https://lojasaraiva.vteximg.com.br/arquivos/ids/31767639/1011232598.jpg?v=637489970376100000";
+           com:url "https://www.saraiva.com.br/vade-mecum-compacto-23-edicao-2021-10683686/p"^^xsd:string .
+};
+
+INSERT DATA {
+<http://www.each.usp.br/ach2098/comercio#ArseneLupinOLadraoDeCasaca> rdf:type owl:NamedIndividual, com:Livro;
+com:codigo "kundCcYZA2XNfYHA6FOQ";
+
+           com:nome "Arsène Lupin, O Ladrão De Casaca";
+           com:preco "39.90"^^xsd:double ;
+           com:marca "Pandorga";
+           com:cor "Unica";
+           com:quantidade 999;
+           com:urlFoto "https://lojasaraiva.vteximg.com.br/arquivos/ids/31770960/1011266346.jpg?v=637492773534530000";
+           com:url "https://www.saraiva.com.br/arsene-lupin-o-ladrao-de-casaca-10682505/p"^^xsd:string .
+};
+
+
+
+#################################################################
+#    Lojas e navegação                                                    #
+#################################################################
+
+INSERT DATA { 
+  <http://www.each.usp.br/ach2098/comercio#Cultural> rdf:type  owl:NamedIndividual, com:Shopping;
+   com:nome "Cultural";
+   com:comercializa com:PaiRicoPaiPobreEdicao20Anos, com:MaisEspertoQueoDiabooMistérioReveladodaLiberdadeedoSucesso, com:DoMilAoMilhao, com:VadeMecumCompacto23Edição2021, com:ArseneLupinOLadraoDeCasaca.
+};
+
+INSERT DATA { 
+  <http://www.each.usp.br/ach2098/comercio#Saraiva> rdf:type  owl:NamedIndividual, com:Loja;
+  com:codigo "uSuAhg7lZAgTxdub3Qa0";
+   com:vende com:PaiRicoPaiPobreEdicao20Anos, com:MaisEspertoQueoDiabooMistérioReveladodaLiberdadeedoSucesso, com:DoMilAoMilhao, com:VadeMecumCompacto23Edição2021, com:ArseneLupinOLadraoDeCasaca;
+   com:url "https://www.saraiva.com.br/"^^xsd:string;
+   com:nome "Saraiva"^^xsd:string;
+   com:nela_ocorre com:Cultural;
+   com:logoUrl "https://logodownload.org/wp-content/uploads/2014/10/saraiva-logo-1.png"^^xsd:string.
+};
+
+DELETE DATA { 
+  <http://www.each.usp.br/ach2098/comercio#Cultural> rdf:type  owl:NamedIndividual, com:Shopping;
+   com:nome "Cultural";
+   com:comercializa com:PaiRicoPaiPobreEdicao20Anos, com:MaisEspertoQueoDiabooMistérioReveladodaLiberdadeedoSucesso, com:DoMilAoMilhao, com:VadeMecumCompacto23Edição2021, com:ArseneLupinOLadraoDeCasaca.
+};
+
+INSERT DATA { 
+  <http://www.each.usp.br/ach2098/comercio#Cultural> rdf:type  owl:NamedIndividual, com:Shopping;
+   com:nome "Cultural";
+   com:ocorre_em com:Saraiva;
+     com:codigo "pH8Vpr252IFIYQifqbO0";
+   com:comercializa com:PaiRicoPaiPobreEdicao20Anos, com:MaisEspertoQueoDiabooMistérioReveladodaLiberdadeedoSucesso, com:DoMilAoMilhao, com:VadeMecumCompacto23Edição2021, com:ArseneLupinOLadraoDeCasaca.
+};
+
+INSERT DATA { 
+  <http://www.each.usp.br/ach2098/comercio#Telefonia> rdf:type  owl:NamedIndividual, com:Shopping;
+   com:nome "Telefonia";
+   com:comercializa com:Iphone12128GB, com:Iphone1125GB, com:IphoneSE64GB, com:IphoneXR128GB, com:Iphone12Pro, com:GalazyZFold2, com:GalaxyS21PLUS, com:GalazyA52, com:GalaxyS21Ultra5G, com:GalaxyM21s.
+};
+
+INSERT DATA { 
+  <http://www.each.usp.br/ach2098/comercio#Samsung> rdf:type  owl:NamedIndividual, com:Loja;
+  com:codigo "B0vawkRUaqQKVBkSHdhk";
+   com:vende com:GalazyZFold2, com:GalaxyS21PLUS, com:GalazyA52, com:GalaxyS21Ultra5G, com:GalaxyM21s;
+   com:url "https://shop.samsung.com/br/"^^xsd:string;
+   com:nome "Samsung"^^xsd:string;
+   com:nela_ocorre com:Telefonia;
+   com:logoUrl "https://i.pinimg.com/originals/77/e1/a7/77e1a7e1b73ae8a91d98a66534ad7d13.png"^^xsd:string.
+};
+
+INSERT DATA { 
+  <http://www.each.usp.br/ach2098/comercio#Apple> rdf:type  owl:NamedIndividual, com:Loja;
+  com:codigo "wdxwbexb3M5W4A2qa1Bx";
+   com:vende com:Iphone12128GB, com:Iphone1125GB, com:IphoneSE64GB, com:IphoneXR128GB, com:Iphone12Pro;
+   com:url "https://www.apple.com/br/shop"^^xsd:string;
+   com:nome "Apple"^^xsd:string;
+   com:nela_ocorre com:Telefonia;
+   com:logoUrl "https://inconnectshop.com.br/wp-content/uploads/2021/05/Apple-Simbolo.png"^^xsd:string.
+};
+
+DELETE DATA { 
+  <http://www.each.usp.br/ach2098/comercio#Telefonia> rdf:type  owl:NamedIndividual, com:Shopping;
+   com:nome "Telefonia";
+   com:comercializa com:Iphone12128GB, com:Iphone1125GB, com:IphoneSE64GB, com:IphoneXR128GB, com:Iphone12Pro, com:GalazyZFold2, com:GalaxyS21PLUS, com:GalazyA52, com:GalaxyS21Ultra5G, com:GalaxyM21s.
+};
+
+INSERT DATA { 
+  <http://www.each.usp.br/ach2098/comercio#Telefonia> rdf:type  owl:NamedIndividual, com:Shopping;
+  com:codigo "cwlDMU8aTUYmxovHJY1j";
+   com:nome "Telefonia";
+   com:ocorre_em com:Samsung, com:Apple;
+   com:comercializa com:Iphone12128GB, com:Iphone1125GB, com:IphoneSE64GB, com:IphoneXR128GB, com:Iphone12Pro, com:GalazyZFold2, com:GalaxyS21PLUS, com:GalazyA52, com:GalaxyS21Ultra5G, com:GalaxyM21s.
+};
+
+INSERT DATA { 
+  <http://www.each.usp.br/ach2098/comercio#Farmacia> rdf:type  owl:NamedIndividual, com:Shopping;
+   com:nome "Farmácia";
+   com:comercializa com:Dorflex50, com:DipironaMono, com:Neosaldina30, com:Novalgina1g, com:AspirinaPrevent.
+};
+
+INSERT DATA { 
+  <http://www.each.usp.br/ach2098/comercio#Drogasil> rdf:type  owl:NamedIndividual, com:Loja;
+  com:codigo "TVs8rW2miLLlHBgEyWho";
+
+   com:vende com:Dorflex50, com:DipironaMono, com:Neosaldina30, com:Novalgina1g, com:AspirinaPrevent;
+   com:url "https://www.drogasil.com.br/"^^xsd:string;
+   com:nome "Drogasil"^^xsd:string;
+   com:nela_ocorre com:Farmacia;
+   com:logoUrl "https://upload.wikimedia.org/wikipedia/commons/7/77/Logo_drogasil.png"^^xsd:string.
+};
+
+DELETE DATA { 
+  <http://www.each.usp.br/ach2098/comercio#Farmacia> rdf:type  owl:NamedIndividual, com:Shopping;
+   com:nome "Farmácia";
+   com:comercializa com:Dorflex50, com:DipironaMono, com:Neosaldina30, com:Novalgina1g, com:AspirinaPrevent.
+};
+
+INSERT DATA { 
+  <http://www.each.usp.br/ach2098/comercio#Farmacia> rdf:type  owl:NamedIndividual, com:Shopping;
+   com:nome "Farmácia";
+   com:codigo "sW1AjAIyWDcBKWNBC5pU";
+   com:ocorre_em com:Drogasil;
+   com:comercializa com:Dorflex50, com:DipironaMono, com:Neosaldina30, com:Novalgina1g, com:AspirinaPrevent.
+};
+
+INSERT DATA { 
+  <http://www.each.usp.br/ach2098/comercio#VestuarioEsportivo> rdf:type  owl:NamedIndividual, com:Shopping;
+   com:nome "Vestuário Esportivo";
+   com:comercializa com:CamisaMasculinaMangaCurtaProTourBikeAzul, com:NikeMonsterMesh5, com:CamisaMilanoTricolineMangaLongaMasculinaAzul, com:CamisaPoloBasicamenteMangaLongaFemininaAzulEscuro, com:CalcaAdidasEssentials3ListrasMasculinaMarinho.
+};
+
+INSERT DATA { 
+  <http://www.each.usp.br/ach2098/comercio#Netshoes> rdf:type  owl:NamedIndividual, com:Loja;
+  com:codigo "auMaCWs7VcekAy6whBE9";
+   com:vende com:CamisaMasculinaMangaCurtaProTourBikeAzul, com:NikeMonsterMesh5, com:CamisaMilanoTricolineMangaLongaMasculinaAzul, com:CamisaPoloBasicamenteMangaLongaFemininaAzulEscuro, com:CalcaAdidasEssentials3ListrasMasculinaMarinho;
+   com:url "https://www.netshoes.com.br/"^^xsd:string;
+   com:nome "Netshoes"^^xsd:string;
+   com:nela_ocorre com:VestuarioEsportivo;
+   com:logoUrl "https://quemquercupom.com.br/wp-content/uploads/2019/09/xNetshoe.jpg.pagespeed.ic_.PnSUURrbSQ.jpg"^^xsd:string.
+};
+
+DELETE DATA { 
+  <http://www.each.usp.br/ach2098/comercio#VestuarioEsportivo> rdf:type  owl:NamedIndividual, com:Shopping;
+   com:nome "Vestuário Esportivo";
+   com:comercializa com:CamisaMasculinaMangaCurtaProTourBikeAzul, com:NikeMonsterMesh5, com:CamisaMilanoTricolineMangaLongaMasculinaAzul, com:CamisaPoloBasicamenteMangaLongaFemininaAzulEscuro, com:CalcaAdidasEssentials3ListrasMasculinaMarinho.
+};
+
+INSERT DATA { 
+  <http://www.each.usp.br/ach2098/comercio#VestuarioEsportivo> rdf:type  owl:NamedIndividual, com:Shopping;
+  com:codigo "UKWaE7x172liZkj5ZjFk";
+   com:nome "Vestuário Esportivo";
+   com:ocorre_em com:Netshoes;
+   com:comercializa com:CamisaMasculinaMangaCurtaProTourBikeAzul, com:NikeMonsterMesh5, com:CamisaMilanoTricolineMangaLongaMasculinaAzul, com:CamisaPoloBasicamenteMangaLongaFemininaAzulEscuro, com:CalcaAdidasEssentials3ListrasMasculinaMarinho.
+};
+
+INSERT DATA { 
+  <http://www.each.usp.br/ach2098/comercio#Computador> rdf:type  owl:NamedIndividual, com:Entrada;
+   com:conecta 
+        [
+            a com:Patio;
+            com:distancia "5"^^xsd:double;
+            com:direcao "Oeste";
+            com:conecta 
+                [
+                    a com:Corredor;
+                    com:direcao "Oeste";
+                    com:distancia "5"^^xsd:double;
+                    com:conecta com:Netshoes;
+                ],
+                [
+                    a com:Corredor;
+                    com:direcao "Sul";
+                    com:distancia "5"^^xsd:double;
+                    com:conecta com:Saraiva;
+                ];
+        ],
+        [
+            a com:Patio;
+            com:distancia "5"^^xsd:double;
+            com:direcao "Norte";
+            com:conecta 
+                [
+                    a com:Corredor;
+                    com:direcao "Norte";
+                    com:distancia "5"^^xsd:double;
+                    com:conecta com:Apple;       
+                ],
+                [
+                    a com:Corredor;
+                    com:direcao "Leste";
+                    com:distancia "5"^^xsd:double;
+                    com:conecta com:Drogasil;
+                ];  
+        ],
+        [
+            a com:Corredor;
+            com:distancia "5"^^xsd:double;
+            com:direcao "Leste";
+            com:conecta com:Samsung;
+        ].
+};
+
+INSERT DATA {
+  <http://www.each.usp.br/ach2098/comercio#Kendy> rdf:type  owl:NamedIndividual, com:Usuario;
+   com:nome "Kendy";
+   com:codigo "12342345";
+   com:senha "4321";
+   com:email "gabriel.kendy@usp.br";
+}
+
+INSERT DATA {
+  <http://www.each.usp.br/ach2098/comercio#Kendy> rdf:type  owl:NamedIndividual, com:Usuario;
+   com:nome "Gabriel R";
+   com:codigo "12342347";
+   com:senha "12345";
+   com:email "gabrsn1@usp.br";
+}
+
+################################
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX com: <http://www.each.usp.br/ach2098/comercio#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX co: <http://purl.org/ontology/co/core#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+
+select distinct ?super ?passar_por ?distancia ?direcao ?destino  { 
+  ?super rdf:type com:Entrada.
+  ?super com:conecta* ?mid .
+  FILTER ( ?super != ?mid )
+  ?mid com:conecta+ ?destino .
+  ?mid rdf:type ?passar_por .
+  ?mid com:distancia ?distancia .
+  ?mid com:direcao ?direcao.
+  ?mid rdf:type/rdfs:subClassOf* com:Estrutura .
+   ?destino rdf:type/rdfs:subClassOf* com:Loja .
+} order by ?super ?destino
