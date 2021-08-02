@@ -1,0 +1,955 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.each.usp.br/ach2098/comercio#"
+     xml:base="http://www.each.usp.br/ach2098/comercio"
+     xmlns:com="http://www.each.usp.br/ach2098/comercio#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.each.usp.br/ach2098/comercio"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#comercializa -->
+
+    <owl:ObjectProperty rdf:about="http://www.each.usp.br/ach2098/comercio#comercializa">
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Alimentacao"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Shopping"/>
+        <rdfs:range rdf:resource="http://www.each.usp.br/ach2098/comercio#Acessorios"/>
+        <rdfs:range rdf:resource="http://www.each.usp.br/ach2098/comercio#Drogaria"/>
+        <rdfs:range rdf:resource="http://www.each.usp.br/ach2098/comercio#FastFood"/>
+        <rdfs:range rdf:resource="http://www.each.usp.br/ach2098/comercio#Infantil"/>
+        <rdfs:range rdf:resource="http://www.each.usp.br/ach2098/comercio#Livraria"/>
+        <rdfs:range rdf:resource="http://www.each.usp.br/ach2098/comercio#Moda"/>
+        <rdfs:range rdf:resource="http://www.each.usp.br/ach2098/comercio#Refeicao"/>
+        <rdfs:range rdf:resource="http://www.each.usp.br/ach2098/comercio#Sobremesa"/>
+        <rdfs:range rdf:resource="http://www.each.usp.br/ach2098/comercio#Tecnologia"/>
+        <rdfs:comment xml:lang="pt">Propriedade que define a relação entre um Shopping ou Alimentacao e o tipo de produto ou alimento nele comercializado.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#conecta -->
+
+    <owl:ObjectProperty rdf:about="http://www.each.usp.br/ach2098/comercio#conecta">
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Estrutura"/>
+        <rdfs:range rdf:resource="http://www.each.usp.br/ach2098/comercio#Estrutura"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#disponibiliza -->
+
+    <owl:ObjectProperty rdf:about="http://www.each.usp.br/ach2098/comercio#disponibiliza">
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Entretenimento"/>
+        <rdfs:range rdf:resource="http://www.each.usp.br/ach2098/comercio#Cinema"/>
+        <rdfs:range rdf:resource="http://www.each.usp.br/ach2098/comercio#Fliperama"/>
+        <rdfs:range rdf:resource="http://www.each.usp.br/ach2098/comercio#Galeria"/>
+        <rdfs:comment xml:lang="pt">Propriedade que define a relação entre um Entretenimento e o tipo de entretenimento que ele disponibiliza.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#efetua -->
+
+    <owl:ObjectProperty rdf:about="http://www.each.usp.br/ach2098/comercio#efetua">
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Usuario"/>
+        <rdfs:range rdf:resource="http://www.each.usp.br/ach2098/comercio#Pedido"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#inclui -->
+
+    <owl:ObjectProperty rdf:about="http://www.each.usp.br/ach2098/comercio#inclui">
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Acessorios"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Drogaria"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#FastFood"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Infantil"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Livraria"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Moda"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Pedido"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Refeicao"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Sobremesa"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Tecnologia"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#nele_ocorre -->
+
+    <owl:ObjectProperty rdf:about="http://www.each.usp.br/ach2098/comercio#nele_ocorre">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.each.usp.br/ach2098/comercio#ocorre_em"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Sala"/>
+        <rdfs:range rdf:resource="http://www.each.usp.br/ach2098/comercio#Atividade"/>
+        <rdfs:comment xml:lang="pt">Propriedade que define a relação entre um Espaco e uma Atividade que nele ocorre.</rdfs:comment>
+        <rdfs:seeAlso xml:lang="pt">ocorre_em</rdfs:seeAlso>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#ocorre_em -->
+
+    <owl:ObjectProperty rdf:about="http://www.each.usp.br/ach2098/comercio#ocorre_em">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Atividade"/>
+        <rdfs:range rdf:resource="http://www.each.usp.br/ach2098/comercio#Sala"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#serve -->
+
+    <owl:ObjectProperty rdf:about="http://www.each.usp.br/ach2098/comercio#serve">
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Servico"/>
+        <rdfs:range rdf:resource="http://www.each.usp.br/ach2098/comercio#Ambulatorio"/>
+        <rdfs:range rdf:resource="http://www.each.usp.br/ach2098/comercio#Banco"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#vende -->
+
+    <owl:ObjectProperty rdf:about="http://www.each.usp.br/ach2098/comercio#vende">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Acessorios"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Drogaria"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#FastFood"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Infantil"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Livraria"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Moda"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Refeicao"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#SalaComercial"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Sobremesa"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Tecnologia"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#SalaComercial"/>
+        <rdfs:range rdf:resource="http://www.each.usp.br/ach2098/comercio#Acessorios"/>
+        <rdfs:range rdf:resource="http://www.each.usp.br/ach2098/comercio#Drogaria"/>
+        <rdfs:range rdf:resource="http://www.each.usp.br/ach2098/comercio#FastFood"/>
+        <rdfs:range rdf:resource="http://www.each.usp.br/ach2098/comercio#Infantil"/>
+        <rdfs:range rdf:resource="http://www.each.usp.br/ach2098/comercio#Livraria"/>
+        <rdfs:range rdf:resource="http://www.each.usp.br/ach2098/comercio#Moda"/>
+        <rdfs:range rdf:resource="http://www.each.usp.br/ach2098/comercio#Refeicao"/>
+        <rdfs:range rdf:resource="http://www.each.usp.br/ach2098/comercio#Sobremesa"/>
+        <rdfs:range rdf:resource="http://www.each.usp.br/ach2098/comercio#Tecnologia"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#codigo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.each.usp.br/ach2098/comercio#codigo">
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Acessorios"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Ambulatorio"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Atividade"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Banco"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Cinema"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Drogaria"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Espaco"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#FastFood"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Fliperama"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Galeria"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Infantil"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Livraria"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Moda"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Pedido"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Refeicao"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Sobremesa"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Tecnologia"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Usuario"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#codigoUsuario -->
+
+    <owl:DatatypeProperty rdf:about="http://www.each.usp.br/ach2098/comercio#codigoUsuario">
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Pedido"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#cor -->
+
+    <owl:DatatypeProperty rdf:about="http://www.each.usp.br/ach2098/comercio#cor">
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Moda"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="pt">Cor de um item.</rdfs:comment>
+        <rdfs:seeAlso xml:lang="pt">fabricante</rdfs:seeAlso>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#data -->
+
+    <owl:DatatypeProperty rdf:about="http://www.each.usp.br/ach2098/comercio#data">
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Pedido"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#direcao -->
+
+    <owl:DatatypeProperty rdf:about="http://www.each.usp.br/ach2098/comercio#direcao">
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Passagem"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#distancia -->
+
+    <owl:DatatypeProperty rdf:about="http://www.each.usp.br/ach2098/comercio#distancia">
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Passagem"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#email -->
+
+    <owl:DatatypeProperty rdf:about="http://www.each.usp.br/ach2098/comercio#email">
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Usuario"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#endereco -->
+
+    <owl:DatatypeProperty rdf:about="http://www.each.usp.br/ach2098/comercio#endereco">
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Sala"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#logoUrl -->
+
+    <owl:DatatypeProperty rdf:about="http://www.each.usp.br/ach2098/comercio#logoUrl">
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#SalaComercial"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#marca -->
+
+    <owl:DatatypeProperty rdf:about="http://www.each.usp.br/ach2098/comercio#marca">
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Acessorios"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Drogaria"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Infantil"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Livraria"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Moda"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Tecnologia"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="pt">Marca de um produto.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#nome -->
+
+    <owl:DatatypeProperty rdf:about="http://www.each.usp.br/ach2098/comercio#nome">
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Acessorios"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Ambulatorio"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Atividade"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Banco"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Cinema"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Drogaria"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#FastFood"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Fliperama"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Galeria"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Infantil"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Livraria"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Loja"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Moda"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Refeicao"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Restaurante"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#SalaComercial"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Sobremesa"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Tecnologia"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Usuario"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#preco -->
+
+    <owl:DatatypeProperty rdf:about="http://www.each.usp.br/ach2098/comercio#preco">
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Acessorios"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Drogaria"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#FastFood"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Infantil"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Livraria"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Moda"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Refeicao"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Sala"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Sobremesa"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Tecnologia"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment xml:lang="pt">Preço de um item.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#quantidade -->
+
+    <owl:DatatypeProperty rdf:about="http://www.each.usp.br/ach2098/comercio#quantidade">
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Acessorios"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Ambulatorio"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Drogaria"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#FastFood"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Infantil"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Livraria"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Moda"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Refeicao"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Sobremesa"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Tecnologia"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#senha -->
+
+    <owl:DatatypeProperty rdf:about="http://www.each.usp.br/ach2098/comercio#senha">
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Usuario"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#total -->
+
+    <owl:DatatypeProperty rdf:about="http://www.each.usp.br/ach2098/comercio#total">
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Pedido"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#url -->
+
+    <owl:DatatypeProperty rdf:about="http://www.each.usp.br/ach2098/comercio#url">
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Acessorios"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Drogaria"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#FastFood"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Infantil"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Livraria"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Moda"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Refeicao"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Sobremesa"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Tecnologia"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#urlFoto -->
+
+    <owl:DatatypeProperty rdf:about="http://www.each.usp.br/ach2098/comercio#urlFoto">
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Acessorios"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Drogaria"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#FastFood"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Infantil"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Livraria"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Moda"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Refeicao"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Sobremesa"/>
+        <rdfs:domain rdf:resource="http://www.each.usp.br/ach2098/comercio#Tecnologia"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#Acessorios -->
+
+    <owl:Class rdf:about="http://www.each.usp.br/ach2098/comercio#Acessorios">
+        <rdfs:label xml:lang="pt">Acessórios</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#Alimentacao -->
+
+    <owl:Class rdf:about="http://www.each.usp.br/ach2098/comercio#Alimentacao">
+        <rdfs:subClassOf rdf:resource="http://www.each.usp.br/ach2098/comercio#Atividade"/>
+        <rdfs:comment xml:lang="pt">Atividade que simboliza a comercialização de produtos.</rdfs:comment>
+        <rdfs:label xml:lang="pt">Alimentação</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#Almoço -->
+
+    <owl:Class rdf:about="http://www.each.usp.br/ach2098/comercio#Almoço">
+        <rdfs:subClassOf rdf:resource="http://www.each.usp.br/ach2098/comercio#Refeicao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#Ambulatorio -->
+
+    <owl:Class rdf:about="http://www.each.usp.br/ach2098/comercio#Ambulatorio">
+        <rdfs:label xml:lang="pt">Ambulatório</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#Atividade -->
+
+    <owl:Class rdf:about="http://www.each.usp.br/ach2098/comercio#Atividade">
+        <owl:disjointWith rdf:resource="http://www.each.usp.br/ach2098/comercio#Espaco"/>
+        <rdfs:label xml:lang="pt">Atividade</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#Banco -->
+
+    <owl:Class rdf:about="http://www.each.usp.br/ach2098/comercio#Banco">
+        <rdfs:label xml:lang="pt">Banco</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#Batata -->
+
+    <owl:Class rdf:about="http://www.each.usp.br/ach2098/comercio#Batata">
+        <rdfs:subClassOf rdf:resource="http://www.each.usp.br/ach2098/comercio#FastFood"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#Brinquedo -->
+
+    <owl:Class rdf:about="http://www.each.usp.br/ach2098/comercio#Brinquedo">
+        <rdfs:subClassOf rdf:resource="http://www.each.usp.br/ach2098/comercio#Infantil"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#Calça -->
+
+    <owl:Class rdf:about="http://www.each.usp.br/ach2098/comercio#Calça">
+        <rdfs:subClassOf rdf:resource="http://www.each.usp.br/ach2098/comercio#Moda"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#Camisa -->
+
+    <owl:Class rdf:about="http://www.each.usp.br/ach2098/comercio#Camisa">
+        <rdfs:subClassOf rdf:resource="http://www.each.usp.br/ach2098/comercio#Moda"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#Cinema -->
+
+    <owl:Class rdf:about="http://www.each.usp.br/ach2098/comercio#Cinema">
+        <rdfs:label xml:lang="pt">Cinema</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#Computador -->
+
+    <owl:Class rdf:about="http://www.each.usp.br/ach2098/comercio#Computador">
+        <rdfs:subClassOf rdf:resource="http://www.each.usp.br/ach2098/comercio#Tecnologia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#Corredor -->
+
+    <owl:Class rdf:about="http://www.each.usp.br/ach2098/comercio#Corredor">
+        <rdfs:subClassOf rdf:resource="http://www.each.usp.br/ach2098/comercio#Passagem"/>
+        <rdfs:label xml:lang="pt">Corredor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#Doce -->
+
+    <owl:Class rdf:about="http://www.each.usp.br/ach2098/comercio#Doce">
+        <rdfs:subClassOf rdf:resource="http://www.each.usp.br/ach2098/comercio#Sobremesa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#Drogaria -->
+
+    <owl:Class rdf:about="http://www.each.usp.br/ach2098/comercio#Drogaria">
+        <rdfs:label xml:lang="pt">Drogaria</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#Elevador -->
+
+    <owl:Class rdf:about="http://www.each.usp.br/ach2098/comercio#Elevador">
+        <rdfs:subClassOf rdf:resource="http://www.each.usp.br/ach2098/comercio#Passagem"/>
+        <rdfs:label xml:lang="pt">Elevador</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#Entrada -->
+
+    <owl:Class rdf:about="http://www.each.usp.br/ach2098/comercio#Entrada">
+        <rdfs:subClassOf rdf:resource="http://www.each.usp.br/ach2098/comercio#Estrutura"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#Entretenimento -->
+
+    <owl:Class rdf:about="http://www.each.usp.br/ach2098/comercio#Entretenimento">
+        <rdfs:subClassOf rdf:resource="http://www.each.usp.br/ach2098/comercio#Atividade"/>
+        <rdfs:label xml:lang="pt">Entretenimento</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#Escada -->
+
+    <owl:Class rdf:about="http://www.each.usp.br/ach2098/comercio#Escada">
+        <rdfs:subClassOf rdf:resource="http://www.each.usp.br/ach2098/comercio#Passagem"/>
+        <rdfs:label xml:lang="pt">Escada</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#EscadaRolante -->
+
+    <owl:Class rdf:about="http://www.each.usp.br/ach2098/comercio#EscadaRolante">
+        <rdfs:subClassOf rdf:resource="http://www.each.usp.br/ach2098/comercio#Passagem"/>
+        <rdfs:label xml:lang="pt">Escada Rolante</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#Espaco -->
+
+    <owl:Class rdf:about="http://www.each.usp.br/ach2098/comercio#Espaco">
+        <rdfs:label xml:lang="pt">Espaço</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#Estacionamento -->
+
+    <owl:Class rdf:about="http://www.each.usp.br/ach2098/comercio#Estacionamento">
+        <rdfs:subClassOf rdf:resource="http://www.each.usp.br/ach2098/comercio#Atividade"/>
+        <rdfs:label xml:lang="pt">Estacionamento</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#Estrutura -->
+
+    <owl:Class rdf:about="http://www.each.usp.br/ach2098/comercio#Estrutura">
+        <rdfs:subClassOf rdf:resource="http://www.each.usp.br/ach2098/comercio#Espaco"/>
+        <rdfs:label xml:lang="pt">Estrutura</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#FastFood -->
+
+    <owl:Class rdf:about="http://www.each.usp.br/ach2098/comercio#FastFood">
+        <rdfs:label xml:lang="pt">FastFood</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#Fliperama -->
+
+    <owl:Class rdf:about="http://www.each.usp.br/ach2098/comercio#Fliperama">
+        <rdfs:label xml:lang="pt">Fliperama</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#Galeria -->
+
+    <owl:Class rdf:about="http://www.each.usp.br/ach2098/comercio#Galeria">
+        <rdfs:label xml:lang="pt">Galeria</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#Hamburguer -->
+
+    <owl:Class rdf:about="http://www.each.usp.br/ach2098/comercio#Hamburguer">
+        <rdfs:subClassOf rdf:resource="http://www.each.usp.br/ach2098/comercio#FastFood"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#Infantil -->
+
+    <owl:Class rdf:about="http://www.each.usp.br/ach2098/comercio#Infantil">
+        <rdfs:label xml:lang="pt">Infatil</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#Instalacao -->
+
+    <owl:Class rdf:about="http://www.each.usp.br/ach2098/comercio#Instalacao">
+        <rdfs:subClassOf rdf:resource="http://www.each.usp.br/ach2098/comercio#Sala"/>
+        <owl:disjointWith rdf:resource="http://www.each.usp.br/ach2098/comercio#SalaComercial"/>
+        <rdfs:label xml:lang="pt">Instalação</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#Janta -->
+
+    <owl:Class rdf:about="http://www.each.usp.br/ach2098/comercio#Janta">
+        <rdfs:subClassOf rdf:resource="http://www.each.usp.br/ach2098/comercio#Refeicao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#Joia -->
+
+    <owl:Class rdf:about="http://www.each.usp.br/ach2098/comercio#Joia">
+        <rdfs:subClassOf rdf:resource="http://www.each.usp.br/ach2098/comercio#Acessorios"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#Lazer -->
+
+    <owl:Class rdf:about="http://www.each.usp.br/ach2098/comercio#Lazer">
+        <rdfs:subClassOf rdf:resource="http://www.each.usp.br/ach2098/comercio#Atividade"/>
+        <rdfs:label xml:lang="pt">Lazer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#Livraria -->
+
+    <owl:Class rdf:about="http://www.each.usp.br/ach2098/comercio#Livraria">
+        <rdfs:label xml:lang="pt">Livraria</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#Livro -->
+
+    <owl:Class rdf:about="http://www.each.usp.br/ach2098/comercio#Livro">
+        <rdfs:subClassOf rdf:resource="http://www.each.usp.br/ach2098/comercio#Livraria"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#Loja -->
+
+    <owl:Class rdf:about="http://www.each.usp.br/ach2098/comercio#Loja">
+        <rdfs:subClassOf rdf:resource="http://www.each.usp.br/ach2098/comercio#SalaComercial"/>
+        <owl:disjointWith rdf:resource="http://www.each.usp.br/ach2098/comercio#Restaurante"/>
+        <rdfs:label xml:lang="pt">Loja</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#Moda -->
+
+    <owl:Class rdf:about="http://www.each.usp.br/ach2098/comercio#Moda">
+        <rdfs:label xml:lang="pt">Moda</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#Passagem -->
+
+    <owl:Class rdf:about="http://www.each.usp.br/ach2098/comercio#Passagem">
+        <rdfs:subClassOf rdf:resource="http://www.each.usp.br/ach2098/comercio#Estrutura"/>
+        <rdfs:comment xml:lang="pt">Estrutura que representa os mecanismos de passagem entre outras estruturas.</rdfs:comment>
+        <rdfs:label xml:lang="pt">Passagem</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#Patio -->
+
+    <owl:Class rdf:about="http://www.each.usp.br/ach2098/comercio#Patio">
+        <rdfs:subClassOf rdf:resource="http://www.each.usp.br/ach2098/comercio#Estrutura"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#Pedido -->
+
+    <owl:Class rdf:about="http://www.each.usp.br/ach2098/comercio#Pedido"/>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#Porta -->
+
+    <owl:Class rdf:about="http://www.each.usp.br/ach2098/comercio#Porta">
+        <rdfs:subClassOf rdf:resource="http://www.each.usp.br/ach2098/comercio#Passagem"/>
+        <rdfs:label xml:lang="pt">Porta</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#Refeicao -->
+
+    <owl:Class rdf:about="http://www.each.usp.br/ach2098/comercio#Refeicao">
+        <rdfs:label xml:lang="pt">Refeição</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#Remedio -->
+
+    <owl:Class rdf:about="http://www.each.usp.br/ach2098/comercio#Remedio">
+        <rdfs:subClassOf rdf:resource="http://www.each.usp.br/ach2098/comercio#Drogaria"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#Restaurante -->
+
+    <owl:Class rdf:about="http://www.each.usp.br/ach2098/comercio#Restaurante">
+        <rdfs:subClassOf rdf:resource="http://www.each.usp.br/ach2098/comercio#SalaComercial"/>
+        <rdfs:label xml:lang="pt">Restaurante</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#Saida -->
+
+    <owl:Class rdf:about="http://www.each.usp.br/ach2098/comercio#Saida">
+        <rdfs:subClassOf rdf:resource="http://www.each.usp.br/ach2098/comercio#Estrutura"/>
+        <rdfs:comment xml:lang="pt">Representa a saída de uma estrutura</rdfs:comment>
+        <rdfs:label xml:lang="pt">Saida</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#Sala -->
+
+    <owl:Class rdf:about="http://www.each.usp.br/ach2098/comercio#Sala">
+        <rdfs:subClassOf rdf:resource="http://www.each.usp.br/ach2098/comercio#Estrutura"/>
+        <rdfs:label xml:lang="pt">Sala</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#SalaComercial -->
+
+    <owl:Class rdf:about="http://www.each.usp.br/ach2098/comercio#SalaComercial">
+        <rdfs:subClassOf rdf:resource="http://www.each.usp.br/ach2098/comercio#Sala"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#Servico -->
+
+    <owl:Class rdf:about="http://www.each.usp.br/ach2098/comercio#Servico">
+        <rdfs:subClassOf rdf:resource="http://www.each.usp.br/ach2098/comercio#Atividade"/>
+        <rdfs:label xml:lang="pt">Serviço</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#Shopping -->
+
+    <owl:Class rdf:about="http://www.each.usp.br/ach2098/comercio#Shopping">
+        <rdfs:subClassOf rdf:resource="http://www.each.usp.br/ach2098/comercio#Atividade"/>
+        <rdfs:comment xml:lang="pt">Atividade que simboliza a comercialização de produtos.</rdfs:comment>
+        <rdfs:label xml:lang="pt">Shopping</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#Smartphone -->
+
+    <owl:Class rdf:about="http://www.each.usp.br/ach2098/comercio#Smartphone">
+        <rdfs:subClassOf rdf:resource="http://www.each.usp.br/ach2098/comercio#Tecnologia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#Sobremesa -->
+
+    <owl:Class rdf:about="http://www.each.usp.br/ach2098/comercio#Sobremesa">
+        <rdfs:label xml:lang="pt">Sobremesa</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#Sorvete -->
+
+    <owl:Class rdf:about="http://www.each.usp.br/ach2098/comercio#Sorvete">
+        <rdfs:subClassOf rdf:resource="http://www.each.usp.br/ach2098/comercio#Sobremesa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#Tecnologia -->
+
+    <owl:Class rdf:about="http://www.each.usp.br/ach2098/comercio#Tecnologia">
+        <rdfs:label xml:lang="pt">Tecnologia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.each.usp.br/ach2098/comercio#Usuario -->
+
+    <owl:Class rdf:about="http://www.each.usp.br/ach2098/comercio#Usuario"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.each.usp.br/ach2098/comercio#Acessorios"/>
+            <rdf:Description rdf:about="http://www.each.usp.br/ach2098/comercio#Almoço"/>
+            <rdf:Description rdf:about="http://www.each.usp.br/ach2098/comercio#Ambulatorio"/>
+            <rdf:Description rdf:about="http://www.each.usp.br/ach2098/comercio#Atividade"/>
+            <rdf:Description rdf:about="http://www.each.usp.br/ach2098/comercio#Banco"/>
+            <rdf:Description rdf:about="http://www.each.usp.br/ach2098/comercio#Batata"/>
+            <rdf:Description rdf:about="http://www.each.usp.br/ach2098/comercio#Brinquedo"/>
+            <rdf:Description rdf:about="http://www.each.usp.br/ach2098/comercio#Calça"/>
+            <rdf:Description rdf:about="http://www.each.usp.br/ach2098/comercio#Camisa"/>
+            <rdf:Description rdf:about="http://www.each.usp.br/ach2098/comercio#Cinema"/>
+            <rdf:Description rdf:about="http://www.each.usp.br/ach2098/comercio#Computador"/>
+            <rdf:Description rdf:about="http://www.each.usp.br/ach2098/comercio#Doce"/>
+            <rdf:Description rdf:about="http://www.each.usp.br/ach2098/comercio#Drogaria"/>
+            <rdf:Description rdf:about="http://www.each.usp.br/ach2098/comercio#Espaco"/>
+            <rdf:Description rdf:about="http://www.each.usp.br/ach2098/comercio#FastFood"/>
+            <rdf:Description rdf:about="http://www.each.usp.br/ach2098/comercio#Fliperama"/>
+            <rdf:Description rdf:about="http://www.each.usp.br/ach2098/comercio#Galeria"/>
+            <rdf:Description rdf:about="http://www.each.usp.br/ach2098/comercio#Hamburguer"/>
+            <rdf:Description rdf:about="http://www.each.usp.br/ach2098/comercio#Infantil"/>
+            <rdf:Description rdf:about="http://www.each.usp.br/ach2098/comercio#Janta"/>
+            <rdf:Description rdf:about="http://www.each.usp.br/ach2098/comercio#Joia"/>
+            <rdf:Description rdf:about="http://www.each.usp.br/ach2098/comercio#Livraria"/>
+            <rdf:Description rdf:about="http://www.each.usp.br/ach2098/comercio#Livro"/>
+            <rdf:Description rdf:about="http://www.each.usp.br/ach2098/comercio#Moda"/>
+            <rdf:Description rdf:about="http://www.each.usp.br/ach2098/comercio#Refeicao"/>
+            <rdf:Description rdf:about="http://www.each.usp.br/ach2098/comercio#Remedio"/>
+            <rdf:Description rdf:about="http://www.each.usp.br/ach2098/comercio#Smartphone"/>
+            <rdf:Description rdf:about="http://www.each.usp.br/ach2098/comercio#Sobremesa"/>
+            <rdf:Description rdf:about="http://www.each.usp.br/ach2098/comercio#Sorvete"/>
+            <rdf:Description rdf:about="http://www.each.usp.br/ach2098/comercio#Tecnologia"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.each.usp.br/ach2098/comercio#Acessorios"/>
+            <rdf:Description rdf:about="http://www.each.usp.br/ach2098/comercio#Ambulatorio"/>
+            <rdf:Description rdf:about="http://www.each.usp.br/ach2098/comercio#Atividade"/>
+            <rdf:Description rdf:about="http://www.each.usp.br/ach2098/comercio#Banco"/>
+            <rdf:Description rdf:about="http://www.each.usp.br/ach2098/comercio#Cinema"/>
+            <rdf:Description rdf:about="http://www.each.usp.br/ach2098/comercio#Drogaria"/>
+            <rdf:Description rdf:about="http://www.each.usp.br/ach2098/comercio#Espaco"/>
+            <rdf:Description rdf:about="http://www.each.usp.br/ach2098/comercio#FastFood"/>
+            <rdf:Description rdf:about="http://www.each.usp.br/ach2098/comercio#Fliperama"/>
+            <rdf:Description rdf:about="http://www.each.usp.br/ach2098/comercio#Galeria"/>
+            <rdf:Description rdf:about="http://www.each.usp.br/ach2098/comercio#Infantil"/>
+            <rdf:Description rdf:about="http://www.each.usp.br/ach2098/comercio#Livraria"/>
+            <rdf:Description rdf:about="http://www.each.usp.br/ach2098/comercio#Moda"/>
+            <rdf:Description rdf:about="http://www.each.usp.br/ach2098/comercio#Refeicao"/>
+            <rdf:Description rdf:about="http://www.each.usp.br/ach2098/comercio#Sobremesa"/>
+            <rdf:Description rdf:about="http://www.each.usp.br/ach2098/comercio#Tecnologia"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.each.usp.br/ach2098/comercio#Alimentacao"/>
+            <rdf:Description rdf:about="http://www.each.usp.br/ach2098/comercio#Entretenimento"/>
+            <rdf:Description rdf:about="http://www.each.usp.br/ach2098/comercio#Estacionamento"/>
+            <rdf:Description rdf:about="http://www.each.usp.br/ach2098/comercio#Lazer"/>
+            <rdf:Description rdf:about="http://www.each.usp.br/ach2098/comercio#Servico"/>
+            <rdf:Description rdf:about="http://www.each.usp.br/ach2098/comercio#Shopping"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.each.usp.br/ach2098/comercio#Corredor"/>
+            <rdf:Description rdf:about="http://www.each.usp.br/ach2098/comercio#Elevador"/>
+            <rdf:Description rdf:about="http://www.each.usp.br/ach2098/comercio#Escada"/>
+            <rdf:Description rdf:about="http://www.each.usp.br/ach2098/comercio#EscadaRolante"/>
+            <rdf:Description rdf:about="http://www.each.usp.br/ach2098/comercio#Porta"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.each.usp.br/ach2098/comercio#Passagem"/>
+            <rdf:Description rdf:about="http://www.each.usp.br/ach2098/comercio#Saida"/>
+            <rdf:Description rdf:about="http://www.each.usp.br/ach2098/comercio#Sala"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
