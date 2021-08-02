@@ -1,7 +1,6 @@
 {
-  "name": "react-typescript-simple-starter",
+  "name": "wscs",
   "version": "1.0.0",
-  "description": "a simple react typescript boilerplate",
   "main": "index.js",
   "scripts": {
     "start": "npm run watch:css && webpack-dev-server --mode development --open --hot",
@@ -18,7 +17,7 @@
     "> 1%",
     "IE 11"
   ],
-  "author": "jishnu koottala",
+  "author": "Gabriel Rodrigues",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.9.0",
